@@ -1,7 +1,7 @@
 # Aygaz_data_analysis
 Depression Dataset Analysis
 
-#1. Gerekli Kütüphanelerin Yüklenmesi
+# 1. Gerekli Kütüphanelerin Yüklenmesi
 Proje başında, veri analizi ve işleme için gerekli Python kütüphaneleri yüklendi:
 
 pandas: Veri manipülasyonu ve analiz için.
@@ -14,6 +14,12 @@ Veri kümesi, pandas kullanılarak yüklendi ve ilk incelemeler yapıldı:
 
 .head() ve .info(): Veri kümesinin genel yapısı incelendi (sütun isimleri, veri türleri ve eksik değerler).
 .describe(): Sayısal değişkenlerin istatistiksel özetleri incelendi.
+
+#3. Eksik Verilerin Analizi
+Veri kümesindeki eksik değerler analiz edildi:
+
+Eksik veri oranı hesaplandı.
+missingno kütüphanesi ile eksik veriler görselleştirildi.
 
 # 4. Eksik Verilerin Doldurulması
 Eksik veriler, KNNImputer kullanılarak tamamlandı. Bu yöntem, en yakın komşuların değerlerinin ortalamasını alarak eksik verileri doldurur:
